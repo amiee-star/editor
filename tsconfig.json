@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"jsx": "react",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"baseUrl": "./",
+		"rootDir": "./",
+		"noImplicitThis": true,
+		"paths": {
+			"@/*": ["src/*"],
+			"@@/*": ["src/.umi/*", "src/.umi-production/*"],
+			"@react-spring": ["src/lib/@react-spring"]
+		},
+		"noImplicitAny": true,
+		"isolatedModules": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strictNullChecks": false,
+		"removeComments": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": ["src/**/*", "./typings.d.ts"],
+	"exclude": ["node_modules/**/*"]
+}

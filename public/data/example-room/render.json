@@ -1,0 +1,1 @@
+{"floodDarkLimit":0.02,"bgMapGamma":1,"device":"CPU","useBgAo":false,"width":1024,"maxDirectSample":0,"maxIndirectSample":0,"bgStrength":6,"bgColor":[0.855,0.863,1],"bgAoDistance":0.5,"usePostProcessFilters":true,"sampleCount":100,"bounceCount":8,"bgAoFactor":0.5,"lightmapResolution":75,"height":768,"useBg":true,"useBgMap":false}

@@ -1,0 +1,109 @@
+.loginModal.ant-card {
+	width: 500px;
+	background-color: #fff;
+	border-radius: 3px;
+	.ant-card-head {
+		border-bottom: none;
+		color: #1f1f1f;
+	}
+	.anticon-close,
+	.ant-input-password-icon {
+		color: #1f1f1f;
+	}
+
+	.ant-input {
+		border-color: #d9d9d9;
+		color: rgba(0, 0, 0, 0.85);
+		height: 40px;
+		line-height: 40px;
+		border-radius: 4px;
+		&::placeholder {
+			color: #ccc;
+			font-size: 14px;
+		}
+		&:hover,
+		&:focus {
+			border-color: #40a9ff !important;
+			border-right-width: 1px !important;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+	.ant-form-item-has-error {
+		.ant-input-affix-wrapper {
+			box-shadow: none;
+		}
+		.ant-input:focus {
+			border-color: #ff7875 !important;
+			border-right-width: 1px !important;
+			outline: 0;
+			box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+		}
+
+		.ant-form-item-explain.ant-form-item-explain-error {
+			color: #ff4d4f;
+		}
+
+		.ant-input-affix-wrapper .ant-input:focus {
+			border-color: transparent !important;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+	.f-pr {
+		position: relative;
+	}
+	.changeLoginType {
+		cursor: pointer;
+		margin-bottom: 15px;
+		color: #1f1f1f;
+		font-size: 14px;
+	}
+	.ant-input-affix-wrapper {
+		border-color: #d9d9d9;
+		color: rgba(0, 0, 0, 0.85);
+		box-shadow: none;
+
+		&:hover,
+		&:focus {
+			border-color: #40a9ff;
+			border-right-width: 1px !important;
+			outline: 0;
+			box-shadow: none;
+		}
+	}
+	.ant-btn-primary {
+		background: #23b5fa;
+		border-color: #23b5fa;
+		font-size: 14px;
+		text-shadow: none;
+		height: 40px;
+		//&:focus {
+		//	color: #fff;
+		//	background: #40a9ff;
+		//	border-color: #40a9ff;
+		//}
+		//&:active {
+		//	color: #fff;
+		//	background: #096dd9;
+		//	border-color: #096dd9;
+		//}
+	}
+	.ant-card-body {
+		padding: 48px 82px 63px;
+	}
+	//
+	.getcoode {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #effbff !important;
+		border-color: #23b8ff !important;
+		color: #23b8ff;
+	}
+	.divider {
+		border-top-color: #e7e7e7;
+		color: #999999;
+		font-size: 18px;
+	}
+}

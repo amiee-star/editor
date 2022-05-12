@@ -1,0 +1,86 @@
+#MusicEditPanel {
+	.ant-list-item:hover {
+		background: #5d5d5d;
+	}
+
+	.lightsListActive {
+		background: #5d5d5d;
+	}
+
+	.ant-list-items {
+		max-height: 240px;
+		overflow: auto;
+	}
+	.ant-input-number {
+		width: 100%;
+	}
+	.spaceTipBox {
+		height: 26px;
+		line-height: 26px;
+		background-color: #5f6265;
+		position: fixed;
+		top: 5px;
+		right: 325px;
+		padding: 0 10px;
+  }
+  .timeTip {
+    margin-left: 5px;
+  }
+  .item-box {
+    position: relative;
+    .item-pic1 {
+      width:85px;
+      height:85px;
+      text-align: center;
+      img {
+        // max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .item-del-icon {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 5px;
+      cursor: pointer;
+    }
+  }
+  .item-box:hover  .item-del-icon{
+    display: block !important;
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    cursor: pointer;
+
+  }
+  .item-selfimg-thumb {
+    width: 25%;
+  }
+  .ant-list-items {
+    display: flex;
+  }
+  .ant-list-split .ant-list-item {
+    margin-right: 13px;
+    border-bottom:none
+  }
+  .default-List {
+    display: flex;
+  }
+  .playList{
+    .ant-list-items {
+      display: block;
+      margin-right: 0x;
+    }
+  }
+  .commentators-list {
+    .ant-list-items {
+      display: flex;
+      flex-wrap: wrap;
+      height: 202px;
+    overflow-y: scroll;
+    .ant-list-item:nth-child(3n){
+      margin-right: 0!important;
+    }
+    }
+  }
+}

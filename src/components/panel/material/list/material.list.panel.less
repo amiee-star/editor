@@ -1,0 +1,27 @@
+#MaterialListPanel,
+#ShowMaterialPanel,
+#PosiMaterialPanel
+ {
+	width: 320px;
+	background-color: #141414;
+	.edit-box {
+		flex: 1;
+		overflow: hidden;
+	}
+  .position-box{
+    width:160px;
+    position:absolute;
+    .item {
+      float: left;
+      cursor: pointer;
+      margin-left: 5px;
+      box-shadow: 0 0 1px 0px #000;
+      color: #eee;
+      width:24px;
+      &.checked,
+      &:hover {
+        background: #000;
+      }
+    }
+  }
+}

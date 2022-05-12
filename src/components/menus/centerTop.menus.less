@@ -1,0 +1,22 @@
+#CenterTopMenus {
+  position: relative;
+	.item {
+		cursor: pointer;
+		box-shadow: 0 0 2px 0px #000;
+		color: #eee;
+		&.checked,
+		&:hover {
+			background: #000;
+		}
+	}
+  .position-box {
+    width: 160px;
+    position: absolute;
+
+    .item {
+      float: left;
+      margin-left: 5px;
+      width: 24px;
+    }
+  }
+}

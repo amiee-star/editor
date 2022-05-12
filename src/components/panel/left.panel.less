@@ -1,0 +1,189 @@
+#LeftPanel {
+	display: flex;
+	justify-content: flex-start;
+	height: 100vh;
+	.panel-box {
+		width: 350px;
+		height: 100vh;
+		padding: 16px;
+		display: flex;
+		background-color: #141414;
+		flex-direction: column;
+		.list-box {
+			margin-right: -8px;
+			padding-right: 8px;
+			flex-grow: 1;
+			overflow-y: auto;
+			overflow-x: hidden;
+			.item-box {
+				background-color: hsla(0, 0%, 100%, 0.05);
+				border-radius: 5px;
+				position: relative;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				border: 2px solid transparent;
+				&:hover {
+          border-color: #19c5f5;
+				}
+				[draggable] {
+					cursor: grab;
+				}
+				.item-pic {
+					height: 100px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					img {
+						max-width: 100%;
+						max-height: 100%;
+					}
+					.text-demo {
+						padding: 5px;
+						font-size: 14px;
+						max-width: 80%;
+          }
+          //!!!!
+          .imgToolTip {
+            width: 1000px!important;
+          }
+          // .ant-tooltip-open {
+          //   width: 1000px!important;
+          // }
+          .item-previewVideo {
+            display: none;
+            color: #eeeeee;
+            background-color: #1e1e1e;
+					  opacity: 0.7;
+            z-index: 9999;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 0 5px;
+          }
+          .item-previewPic {
+            display: none;
+            font-size: 10px;
+            color: #eeeeee;
+            background-color: #1e1e1e;
+					  opacity: 0.7;
+            z-index: 9999;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            padding: 0 3px;
+          }
+          .item-delete {
+            display: none;
+            font-size: 10px;
+            color: #eeeeee;
+            background-color: #1e1e1e;
+					  opacity: 0.7;
+            z-index: 9999;
+            position: absolute;
+            top: 4px;
+            right: 24px;
+            padding: 0 3px;
+          }
+          .item-edit {
+            display: none;
+            font-size: 10px;
+            color: #eeeeee;
+            background-color: #1e1e1e;
+					  opacity: 0.7;
+            z-index: 9999;
+            position: absolute;
+            top: 4px;
+            right: 44px;
+            padding: 0 3px;
+          }
+          .item-delete-m {
+            display: none;
+            font-size: 10px;
+            color: #eeeeee;
+            background-color: #1e1e1e;
+					  opacity: 0.7;
+            z-index: 9999;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            padding: 0 3px;
+          }
+          .item-edit-m {
+            display: none;
+            font-size: 10px;
+            color: #eeeeee;
+            background-color: #1e1e1e;
+					  opacity: 0.7;
+            z-index: 9999;
+            position: absolute;
+            top: 4px;
+            right: 24px;
+            padding: 0 3px;
+          }
+        }
+
+				.item-name {
+					margin: 0 10px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					font-size: 14px;
+					line-height: 2;
+				}
+				.item-label {
+					margin: 0 10px;
+					font-size: 12px;
+					color: #aaa;
+					line-height: 2;
+				}
+				.item-ringTip {
+					position: absolute;
+					left: 4px;
+					top: 4px;
+					background-color: #1e1e1e;
+					opacity: 0.7;
+					height: 20px;
+					line-height: 20px;
+					text-align: center;
+				}
+      }
+      .item-box:hover .item-previewVideo  {
+        display: block !important;
+    }
+    .item-box:hover .item-previewPic,
+    .item-box:hover  .item-delete,
+    .item-box:hover  .item-edit ,
+    .item-box:hover  .item-delete-m ,
+    .item-box:hover  .item-edit-m
+    {
+      display: block !important;
+  }
+  .item-previewPic:hover,
+ .item-delete:hover,
+ .item-edit:hover ,
+ .item-delete-m:hover ,
+ .item-edit-m:hover  {
+   cursor: pointer;
+ }
+  // .item-box:hover .item-ringTip {
+  //   position: absolute;
+  //   right: 65px;
+  //   top: 4px;
+  //   background-color: #1e1e1e;
+  //   opacity: 0.7;
+  //   width: 20px;
+  //   height: 20px;
+  //   line-height: 20px;
+  //   text-align: center;
+  // }
+		}
+		.page-box {
+			padding-top: 16px;
+		}
+		.list-filter {
+			margin-bottom: 16px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<canvas id="s3d-canvas" oncontextmenu="return false;"></canvas>
+	</body>
+	<script>
+		const canvasEle = document.getElementById("s3d-canvas")
+		canvasEle.addEventListener("drop", e => e.preventDefault())
+		canvasEle.addEventListener("dragover", e => e.preventDefault())
+	</script>
+	<script src="./three.js"></script>
+	<script src="./editor.js"></script>
+</html>

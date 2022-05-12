@@ -1,0 +1,49 @@
+#LeftMenus {
+	background-color: #1e1e1e;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60px;
+	height: 100vh;
+	.changelanguage {
+		margin-top: 5px;
+	}
+	.logo {
+		font-size: 40px;
+		// margin-top: 20px;
+	}
+	.btn-box {
+		flex: 1;
+		height: 80vh;
+		overflow: auto;
+		padding-bottom: 10px;
+	}
+
+	.ant-space-item-split {
+		width: 100%;
+	}
+	.btn-item {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 14px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: all 0.3s;
+		.anticon {
+			font-size: 24px;
+		}
+		&:hover,
+		&.current {
+			background-color: #fff;
+      color: #1e1e1e;
+		}
+  }
+
+ .ant-space-item {
+    margin-bottom: 12px !important;
+  }
+}

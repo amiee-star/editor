@@ -1,0 +1,116 @@
+#PositionSlide {
+	.addPositionBtn {
+		width: 100px;
+		background-color: #2c2c2c;
+		height: 114px;
+		margin-right: 10px;
+		border: 2px solid #4b4b4b;
+		cursor: pointer;
+		svg {
+			width: 40px;
+			height: 40px;
+			margin-top: 30px;
+		}
+	}
+	.SortItem {
+		display: flex;
+		flex-wrap: wrap;
+		overflow-x: auto;
+		.slide-item {
+			width: 102px;
+			height: 116px;
+			margin-right: 10px;
+			&.active,
+			&:hover {
+				cursor: pointer;
+				border: 1px solid #19a0f1;
+			}
+		}
+	}
+	.list {
+		width: 100px;
+		height: 100px;
+		background: #ffffff;
+		box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		cursor: pointer;
+		.top1 {
+			position: relative;
+		}
+
+		.top {
+			width: 100%;
+			height: 114px;
+			position: relative;
+			// .thumbnail {
+			// 	width: auto;
+			// 	height: auto;
+			// 	position: absolute;
+			// 	left: 50%;
+			// 	top: 55%;
+			// 	transform: translateX(-50%) translateY(-50%);
+			// }
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			.del {
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				cursor: pointer;
+				width: 24px;
+				height: 24px;
+				border-radius: 50%;
+				background-color: rgba(0, 0, 0, 0.5);
+				border: 2px solid #fff;
+				i {
+					font-size: 12px;
+					width: 100%;
+					display: inline-block;
+					text-align: center;
+					color: #fff;
+				}
+			}
+			// .click {
+			// 	width: 26px;
+			// 	height: 26px;
+			// 	background: #ffffff;
+			// }
+		}
+		.title {
+			width: 100%;
+			height: 34px;
+			line-height: 34px;
+			color: #333333;
+			font-size: 14px;
+			font-family: SourceHanSansCN-Regular;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			padding-left: 12px;
+			.input {
+				border: none;
+			}
+		}
+		.noPadding {
+			height: 30px;
+			padding-left: 0;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: #1e1e1e;
+			opacity: 0.7;
+			color: #ffffff;
+			text-align: center;
+		}
+	}
+	.positionNumTip {
+		margin-right: 5px;
+		height: 30px;
+		line-height: 30px;
+	}
+	.classTip {
+		margin: 0 5px 0 10px;
+	}
+}

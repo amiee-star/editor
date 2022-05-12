@@ -1,0 +1,54 @@
+#NumberClocks {
+	display: flex;
+	.fix-ui {
+		width: 50px;
+		margin-bottom: 16px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		.fix-line {
+			position: relative;
+			width: 80%;
+			flex-grow: 1;
+			margin-bottom: 16px;
+			transition: opacity 0.3s;
+			opacity: 0;
+			&.show {
+				opacity: 1;
+			}
+			&::after,
+			&::before {
+				position: absolute;
+				content: " ";
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+				&::before {
+					top: 0;
+					height: 50%;
+				}
+			}
+			&::after {
+				top: 50%;
+				left: 0;
+				height: 0px;
+				width: 50%;
+				border-top: 1px solid #434343;
+			}
+			&::before {
+				top: 50%;
+				right: 50%;
+				height: calc(100% + 16px);
+				width: 0;
+				border-right: 1px solid #434343;
+			}
+		}
+		.btn-clock {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translate(-20px, -50%);
+			z-index: 2;
+		}
+	}
+}

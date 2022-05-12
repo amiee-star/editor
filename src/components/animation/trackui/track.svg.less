@@ -1,0 +1,42 @@
+.TrackSvg {
+	position: absolute;
+	overflow: visible !important;
+	width: 100%;
+	path {
+		fill: none;
+		pointer-events: all;
+		&.line {
+			stroke: #095cb550;
+		}
+		&.line-bg {
+			transition: stroke-opacity 0.3s;
+			stroke-opacity: 0;
+			stroke: #999;
+			&:hover {
+				stroke-opacity: 0.5;
+			}
+		}
+	}
+	.point-group {
+		transform: translateX(-6px);
+	}
+	rect {
+		fill: none;
+		pointer-events: all;
+		width: 12px;
+		height: 12px;
+		&.point {
+			fill: #095cb5;
+		}
+		&.point-bg {
+			transition: opacity 0.3s;
+			opacity: 0;
+			fill: #fff;
+			cursor: w-resize;
+			&:hover,
+			&.react-draggable-dragging {
+				opacity: 0.8;
+			}
+		}
+	}
+}

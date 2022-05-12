@@ -1,0 +1,53 @@
+#SetSceneModal {
+  .overHeight{
+    max-height: 400px;
+    overflow: auto;
+  }
+	.sceneListcard{
+    margin-bottom: 10px;
+    cursor: pointer;
+    max-height: 500px;
+    .listImg{
+      position: relative;
+      border-radius: 5px;
+      border:2px solid #1f1f1f;
+      p{
+        position: absolute;
+        right:10px;
+        top:70px;
+      }
+    }
+    .listImg:hover{
+      border: 2px solid #52c41a;
+    }
+    .sceneChecked {
+      border: 2px solid #52c41a;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .listCkeck{
+    // border:2px solid #1f1f1f;
+    margin-bottom: 10px;
+    position: relative;
+    max-height: 500px;
+    p{
+      position: absolute;
+      top:5px;
+      right:5px;
+      display: none;
+      cursor: pointer;
+    }
+  }
+  .listCkeck:hover{
+    p{
+      display: block;
+    }
+
+  }
+  .buttontype{
+    height:28px;
+    text-align: center;
+  }
+}
